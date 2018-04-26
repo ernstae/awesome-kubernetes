@@ -233,7 +233,6 @@ Useful Articles
 * [Deploying Kubernetes with SaltStack](http://www.dasblinkenlichten.com/deploying-kubernetes-with-saltstack/) by [Jon Langemak](https://twitter.com/blinken_lichten)
 * [Logging in Kubernetes with Fluentd and Elasticsearch](http://www.dasblinkenlichten.com/logging-in-kubernetes-with-fluentd-and-elasticsearch/) by [Jon Langemak](https://twitter.com/blinken_lichten)
 * [Corekube: Running Kubernetes on CoreOS via OpenStack](http://developer.rackspace.com/blog/running-coreos-and-kubernetes/) by [Mike Metral](https://twitter.com/mikemetral)
-* [Networking Kubernetes Clusters on CoreOS with Weave](http://www.weave.works/guides/networking-kubernetes-clusters-on-coreos-with-weave/) by [Weaveworks](https://twitter.com/weaveworks)
 * [CoreOS + Kubernetes Step By Step](https://coreos.com/kubernetes/docs/latest/getting-started.html) by [Coreos](https://twitter.com/coreoslinux)
 * [Deploying to Kubernetes with Panamax](http://www.ctl.io/developers/blog/post/deploying-to-kubernetes-with-panamax/) by [Brian DeHamer](https://twitter.com/bdehamer)
 * [Deploy Kubernetes with a Single Command Using Atomicapp](http://www.projectatomic.io/blog/2015/08/fun-with-kubenetes-and-atomicapp/) by [Jason Brooks](https://twitter.com/jasonbrooks)
@@ -280,6 +279,7 @@ Useful Articles
 * [Enable IPv6 on Kubernetes with Project Calico](https://www.projectcalico.org/enable-ipv6-on-kubernetes-with-project-calico/) by [Valentin Ouvrard](https://twitter.com/Valentin_NC)
 * [Kubernetes in IPV6-only](https://opsnotice.xyz/kubernetes-ipv6-only/) by [Valentin Ouvrard](https://twitter.com/Valentin_NC)
 * [Kubernetes and everything else - Introduction to Kubernetes and it's context](https://rinormaloku.com/introduction-application-architecture/) by [Rinor Maloku](https://twitter.com/rinormaloku)
+* [GitOps: High-Velocity CI/CD for Kubernetes](http://dzone.com/articles/gitops-high-velocity-cicd-for-kubernetes)
 
 Managed Kubernetes
 =======================================================================
@@ -301,6 +301,7 @@ Managed Kubernetes
   - [Mantl](https://github.com/mantl/mantl)
   - [goPaddle](http://www.gopaddle.io)
   - [VAMP](http://vamp.io)
+  - [Draft](https://draft.sh) - a tool for developers to create cloud native applications with Kubernetes
 
 
   ### [Enterprise Kubernetes Products](#enterprise-kubernetes-products)
@@ -441,7 +442,7 @@ Projects
 
 *To maintain regular surveillance over kubernetes*
 
-* [Console](https://github.com/kubernetes/dashboard)
+* [Console](http://github.com/kubernetes/dashboard)
 * [Datadog](http://www.datadoghq.com/)
 * [eventrouter](https://github.com/heptiolabs/eventrouter) - simple introspective kubernetes service that forwards events to a specified sink.
 * [Grafana Kubernetes App](https://github.com/grafana/kubernetes-app)
@@ -457,6 +458,7 @@ Projects
 * [Sysdig Open Source](http://www.sysdig.org/)
 * [Weave Scope](http://www.weave.works/products/weave-scope/)
 * [Searchlight](https://github.com/appscode/searchlight)
+* [Ingress Monitor Controller](https://github.com/stakater/IngressMonitorController) - A Kubernetes Controller to watch your ingresses and create liveness alerts for your endpoints
 
 ## Testing
 
@@ -491,6 +493,7 @@ Projects
 * [Vili](https://github.com/airware/vili)
 * [Keel](https://keel.sh/)
 * [Apollo](https://github.com/logzio/apollo) - Open Source application providing teams with self service UI for creating and deploying their services to Kubernetes.
+* [Weave Flux – GitOps reconcoliation operator](https://github.com/weaveworks/flux)
 
 ## Serverless Implementations
 
@@ -518,10 +521,12 @@ Projects
 * [etcd](https://github.com/coreos/etcd-operator)
 * [Elasticsearch](https://github.com/upmc-enterprises/elasticsearch-operator)
 * [Memcached](https://github.com/kbst/memcached)
+* [MySQL](https://github.com/oracle/mysql-operator)
 * [MongoDB](https://github.com/kbst/mongodb)
 * [PostgreSQL](https://github.com/CrunchyData/postgres-operator)
 * [PostgreSQL](https://github.com/zalando-incubator/postgres-operator) - manage PostgreSQL clusters using StatefulSets and [Patroni](https://github.com/zalando/patroni).
 * [Kafka](https://github.com/krallistic/kafka-operator)
+* [KubeVirt](https://github.com/kubevirt)
 
 ## Custom Schedulers
 
@@ -560,7 +565,7 @@ Projects
 
 ## Networking
 
-* [WeaveWorks](http://www.weave.works/)
+* [Weave Net](http://www.weave.works/docs/net/latest/kubernetes/kube-addon/)
 * [Canal](https://github.com/tigera/canal) by [Tigera](https://github.com/tigera)
 * [OpenContrail](https://github.com/Juniper/contrail-kubernetes)
 * [Nuage](https://github.com/nuagenetworks/nuage-kubernetes)
@@ -584,7 +589,7 @@ Projects
 * [Envoy](http://lyft.github.io/envoy/)
 * [Amalgam8](http://github.com/amalgam8) - Acquired by [Istio](http://istio.io/)
 * [Linkerd](http://linkerd.io/getting-started/k8s/)
-* [WeaveWorks](http://www.weave.works/weave-for-kubernetes/)
+* [Weave Mesh](https://github.com/weaveworks/mesh)
 * [Conduit](http://conduit.io/)
 
 ## RPC
@@ -601,6 +606,8 @@ Projects
 * [k8sec](https://github.com/dtan4/k8sec)
 * [kubernetes-vault](https://github.com/Boostport/kubernetes-vault)
 * [kubesec](https://github.com/shyiko/kubesec) - Secure Secret management
+* [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
+* [Secure GitOps Using Weave Cloud Deploy And Bitnami's Sealed Secrets](https://engineering.bitnami.com/articles/secure-gitops.html)
 
 ## Web applications
 
@@ -617,6 +624,7 @@ Projects
 
 ## API/CLI adaptors
 
+* [click](https://github.com/databricks/click) - A CLI focused REPL for quickly interacting with Kubernetes objects.
 * [kube-prompt](https://github.com/c-bata/kube-prompt) - Interactive kubernetes client built using go-prompt.
 * [Kube-shell](https://github.com/cloudnativelabs/kube-shell) - Integrated shell for working with the Kubernetes CLI
 * [Kubebot](https://github.com/harbur/kubebot)
@@ -630,8 +638,10 @@ Projects
 * [Kubectl Aliases](https://github.com/ahmetb/kubectl-aliases) - Aliases for Kubectl
 * [Vikube](https://github.com/c9s/vikube.vim) - Kubernetes operations from Vim, in Vim
 * [kube-ps1](https://github.com/jonmosco/kube-ps1) - Kubernetes prompt helper for bash and zsh.
+* [kube-tmux](https://github.com/jonmosco/kube-tmux) - Kubernetes tmux plugin to display the current context and namespace
 * [kubensx](https://github.com/shyiko/kubensx) - Simpler Cluster/User/Namespace switching for Kubernetes (featuring interactive mode and wildcard/fuzzy matching).
 * [stern](https://github.com/wercker/stern) - Multi pod and container log tailing
+* [kubeplay](https://github.com/errordeveloper/kubeplay)
 
 ## Application deployment orchestration
 
@@ -663,6 +673,7 @@ Projects
 * [Ansible](http://docs.ansible.com/ansible/kubernetes_module.html)
 * [Saltstack](http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.k8s.html)
 * [Chef](http://supermarket.chef.io/cookbooks/kubernetes)
+* [kubegen](https://github.com/errordeveloper/kubegen)
 
 ## Security
 
@@ -685,6 +696,7 @@ Projects
 * [F5 Big IP Controller](https://github.com/F5Networks/k8s-bigip-ctlr)
 * [HAProxy Ingress](https://github.com/jcmoraisjr/haproxy-ingress)
 * [Cloudflare Warp Ingress](https://github.com/cloudflare/cloudflare-ingress-controller)
+* [Gloo – Envoy-based API gateway and ingress controller](https://github.com/solo-io/gloo)
 
 ## Big Data
 
@@ -710,12 +722,14 @@ Projects
 * [CoreOS](http://coreos.com)
 * [Kurma](https://github.com/apcera/kurma)
 * [GCI](https://cloud.google.com/container-optimized-os/docs/)
+* [LinuxKit](https://github.com/linuxkit/kubernetes)
 
 ## YAML/JSON Config
 
 * [Kube.libsonnet](https://github.com/heptio/kube.libsonnet) - Currently Unstable
 * [kompose](https://github.com/kubernetes/kompose)
 * [kubeval](https://github.com/garethr/kubeval)
+* [kubegen](https://github.com/errordeveloper/kubegen)
 
 ## Tuning
 
@@ -877,6 +891,7 @@ Connecting with Kubernetes
 * [Newsletter](http://kube.news/)
 * [Reddit](https://www.reddit.com/r/kubernetes/)
 * [Community](https://github.com/kubernetes/community)
+* [Community Q&A – The Office Hours](https://github.com/kubernetes/community/blob/master/events/office-hours.md)
 
 Conferences
 =======================================================================
